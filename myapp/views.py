@@ -12,3 +12,20 @@ def fash(request):
 
 def soft(request):
     return render(request, 'soft.html')
+
+
+def about(request):
+    return render(request, 'about.html')
+
+
+def classes(request):
+    return render(request, 'classes.html')
+
+
+
+def blog(request):
+    return render(request, 'blog.html')
+
+
+def sale(request):
+    return render(request, 'sale.html')
