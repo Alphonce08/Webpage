@@ -18,3 +18,10 @@ def blog(request):
     return render(request, 'blog.html')
 def classes(request):
     return render(request, 'classes.html')
+def hover(request):
+    return render(request, 'hover.html')
+def dynamic(request):
+    return render(request, 'dynamic.html')
+
+def contact(request):
+    return render(request, 'contact.html')

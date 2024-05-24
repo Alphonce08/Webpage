@@ -10,5 +10,8 @@ urlpatterns = [
     path('fash', views.fash, name='fash'),
     path('about', views.about, name='about'),
     path('blog', views.blog, name='blog'),
-    path('classes', views.classes, name='classes')
+    path('classes', views.classes, name='classes'),
+    path('hover', views.hover, name='hover'),
+    path('dynamic', views.dynamic, name='dynamic'),
+    path('contact', views.contact, name='contact')
     ]

@@ -26,6 +26,16 @@
 <meta name="twitter:site" content="@elegantthemes">
 <script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.elegantthemes.com/layouts/health-fitness/yoga-studio-landing-page/live-demo","url":"https://www.elegantthemes.com/layouts/health-fitness/yoga-studio-landing-page/live-demo","name":"Yoga Studio Landing Page - Elegant Themes","isPartOf":{"@id":"https://www.elegantthemes.com/layouts/#website"},"datePublished":"2017-12-05T11:00:21+00:00","dateModified":"2018-01-31T22:32:34+00:00","breadcrumb":{"@id":"https://www.elegantthemes.com/layouts/health-fitness/yoga-studio-landing-page/live-demo#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.elegantthemes.com/layouts/health-fitness/yoga-studio-landing-page/live-demo"]}]},{"@type":"BreadcrumbList","@id":"https://www.elegantthemes.com/layouts/health-fitness/yoga-studio-landing-page/live-demo#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.elegantthemes.com/layouts"},{"@type":"ListItem","position":2,"name":"Yoga Studio Landing Page"}]},{"@type":"WebSite","@id":"https://www.elegantthemes.com/layouts/#website","url":"https://www.elegantthemes.com/layouts/","name":"Elegant Themes","description":"Free Divi Layouts &amp; Layout Packs Designed by Elegant Themes.","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.elegantthemes.com/layouts/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"}]}</script>
 
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Poppins:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+<link rel="stylesoeet" href="{% static 'css/owl.theme.default.min.css' %}">
+     
+
+
+
 <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
 <link rel="alternate" type="application/rss+xml" title="Elegant Themes » Feed" href="https://www.elegantthemes.com/layouts/feed">
 <link rel="alternate" type="application/rss+xml" title="Elegant Themes » Comments Feed" href="https://www.elegantthemes.com/layouts/comments/feed">
@@ -37,51 +47,165 @@
 
 
 
-
-
-
-
-
-
 <h1>Learn through Experience </h1>
 </div>
 </div>
 
 <div class="footer_menu">
-  <ul>
+  
    
-     <li><a href="">Homes</a></li>
-     <li><a href="team">Team</a></li>
-     <li><a href="classes">Classes</a></a></li>
-     <li><a href="fash">Contact</a></li>
-     <li><a href="classes">Classes</a></a></li>
-     <li><a href="contact">Contact</a></li>
-     <li><a href="blog"> Blog</a></li>
-     <li><a href="about"> About</a></li>
-  </ul>
-</div>
 
-<a href="" class="et-cart-info">
-<span></span>
-</a>
-<div id="et_mobile_nav_menu">
-<div class="mobile_nav closed">
-<span class="select_page">Select Page</span>
-<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
-<ul id="mobile_menu" class="et_mobile_menu"><li id="menu-item-209548" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-209547 current_page_item menu-item-209548 et_first_mobile_item"><a href="https://www.elegantthemes.com/layouts/health-fitness/yoga-studio-landing-page/live-demo" aria-current="page">Landing</a></li>
-  <li><a href="team">Team</a></li>
-  <li><a href="classes">Classes</a></a></li>
-  <li><a href="fash">Contact</a></li>
-  <li><a href="classes">Classes</a></a></li>
-  <li><a href="contact">Contact</a></li>
-  <li><a href="blog"> Blog</a></li>
-  <li><a href="about"> About</a></li>
+          </div>
+       </div>
+ </div>
 
-</ul>
-</div>
-</div> 
-</div> 
-</div> 
+ <!---menu row start---->
+ <style>
+    a {
+        text-decoration: none;
+        margin-right: 10px;
+        
+    }
+    a :hover{
+     background-color: white;
+     color: white;
+
+    }
+ </style>
+ <!-----menu row end --->
+  <div class="header_section">
+    <div class="container">
+       <div class="containt_main">
+          <div id="mySidenav" class="sidenav">
+             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+             <h3 class="">Menu</h3>
+     <a href="">Homes</a>
+     <a href="team">Team</a>
+     <a href="classes">Classes</a>
+     <a href="fash">fash</a>
+     <a href="contact">Contact</a>
+     <a href="blog"> Blog</a>
+     <a href="about"> About</a>
+  
+   
+
+
+
+<!-- Dropdown Menu start -->
+<!-- logo section start -->
+     <head>
+      <style>
+        /* Style for the dropdown */
+        .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Style for the dropdown menu */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: aqua;
+      min-width: 160px;
+      box-shadow: 0 8px 16px 0 rgba(25, 221, 235, 0.2);
+      z-index: 1;
+    }
+
+    /* Style for the dropdown links */
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    /* Style for the dropdown links on hover */
+    .dropdown-content a:hover {
+
+    background-color: white; 
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+        /* CSS for the images */
+        .dropdown-content img {
+      width: 30px; /* Adjust the width as needed */
+      height: 30px; /* Adjust the height as needed */
+      margin-right: 10px; /* Adjust the spacing between image and text */
+      border-radius: 50%; /* Make the images round */
+    }
+        .logo {
+          width: 30px; /* Adjust the width as needed */
+          height: 30px; /* Adjust the height as needed */
+          margin-right: 10px; /* Adjust the spacing between image and text */
+          border-radius: 50%; /* Make the images round */
+    
+        }
+        body {
+          background-color: aqua;
+        }
+      </style>
+    </head>
+
+<!------ style css end -------->
+
+    <body>
+      <div class="logo_section">
+        <div class="container">
+           <div class="row">
+              <div class="col-sm-12">
+                 <div class="logo"><a href="index.html"><img src="{% static 'images/logo.png' %}"></a></div>
+              
+              </div>
+           </div>
+        </div>
+      </div>
+      <!-- logo section end -->
+      <!-- header section start -->
+      <div class="header_section">
+        <div class="container">
+           <div class="containt_main">
+              <div id="mySidenav" class="sidenav">
+                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                 <div class="dropdown">
+                   <span>Menu</span>
+                   <div class="dropdown-content">
+                     <a href="team">Team</a>
+                     <a href="classes">Classes</a>
+                     <a href="classes">Fash</a>
+                     <a href="contact">Contact</a>
+                     <a href="blog">Blog</a>
+                     <a href="about">About</a>
+                     
+                   </div>
+                 </div>
+                 
+              </div>
+              
+              <span class="toggle_icon" onclick="openNav()"><img src="{% static 'images/toggle-icon.png' %}"></span>
+                <div>
+              </div>
+           </div>
+        </div>
+      </div>
+    
+      <script>
+        /* JavaScript functions for opening and closing the side navigation */
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+    
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+      </script>
+    </body>
+    <!--- Dropdown Menu End --->
+    
+
 
 
 <div class="et_search_outer">
@@ -136,7 +260,7 @@
 </a>
 </li>
 
-</ul><p id="footer-info">Designed by <a href="https://www.elegantthemes.com/" title="Premium WordPress Themes">TheGreat Themes</a> | Powered by <a href="https://www.wordpress.org/">TheGreat Alphonce Webnar.com ltd</a></p> </div>
+</ul><p id="footer-info">Designed by <a href="https://www.elegantthemes.com/" title="Premium WordPress Themes">© TheGreat Themes</a> | Powered by <a href="https://www.wordpress.org/">TheGreat Alphonce Webnar.com ltd</a></p> </div>
 </div>
 </footer>
 </div>
