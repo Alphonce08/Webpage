@@ -8,10 +8,132 @@
         body {
             background-color: aqua;
         }
+        
     </style>
     
 </head>
 <body>
+    <div class="clip-path"></div>
     <h1>Hello, this page will be update soon</h1>
+    <header>
+        <a href="" class="logo">porto<span>folio</span></a>
+        <div class="navbar">
+            <ul>
+                <li><a href="">Aceuli</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">A propos</a></li>
+                <li><a href="">Mail</a></li>
+                <li><a href="">Designed</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="text">
+        <h1>
+            salut, <br>
+            Je suits <span>B</span>inetia <br>
+            Developer <br>
+            <span>Frond-end</Front-end></span>
+        </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Rerum nesciunt, eaque blanditiis perferendis quo nemo, <br> necessitatibus iste aut consequuntur temporibus dicta <br> itaque modi dolor commodi voluptatem a illum <br> sapiente maxime!</p>
+        <a href="" class="btn">TeleChat</a>
+    </div>
+    <div class="img">
+        <img src="images/tshirt-img.png">
+    </div>
 </body>
 </html>
+
+<style>
+    .text h1 {
+        font-size: 60px;
+    }
+    .text span { 
+        color: rgb(252, 70, 107, 1);
+    }
+    .btn {
+        background: radial-gradient(
+            circle,
+            rgb(2, 236, 217) 30%,
+            rgba(252, 70, 107, 1) 100%
+        );
+        padding: 20px 40px;
+        display: inline-block;
+        margin-top: 20px;
+        transition: 0.5s;
+        .btn:hover {
+            transform: translate(-5px);
+        }
+        .img {
+            position: absolute;
+            right: -63%;
+            top: 51px;
+
+        }
+        .img {
+            width: 29%;
+        }
+    }
+    .navbar ul li {
+        display: inline-block;
+        padding: 8px 12px;
+        position: relative;
+    }
+    a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px;
+
+    }
+    .navbar ulli::after {
+        content: "";
+        display: block;
+        width: 0px;
+        height: 2px;
+        background: rgba(252, 70, 107, 1);
+        transition: 0.5s;
+    }
+    .navbar ul li:hover:after{
+        width: 100%;
+
+    }
+    .logo {
+        font-size: 2em;
+        font-weight: 700;
+    }
+    .text {
+        color: #fff;
+        padding: 40px 80px;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "poppings", sans-serif;
+    }
+    body {
+        background: #001;
+        overflow: hidden;
+    }
+    .clip-path {
+        clip-path: polygon(100% 0, 100% 100%, 49% 100%,
+        65% 48%, 48% 0);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(
+            circle,
+            rgb(2, 236, 217) 30%,
+            rgba(252, 70, 1) 100%
+            );
+    }
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2% 6%;
+    }
+    .navbarul {
+        flex: 1;
+        text-align: right;
+    }
+    </style>
