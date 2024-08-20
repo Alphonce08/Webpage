@@ -1,9 +1,14 @@
+
+{% load static %}
+{% csrf_token %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+
     <style>
         body {
             background-color: aqua;
@@ -29,23 +34,24 @@
     </header>
     <div class="text">
         <h1>
-            salut, <br>
+            Welcome to, <br> <span>Alphonce</span><br> Webnar tutorial <br>
             Je suits <span>B</span>inetia <br>
             Developer <br>
             <span>Frond-end</Front-end></span>
         </h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Rerum nesciunt, eaque blanditiis perferendis quo nemo, <br> necessitatibus iste aut consequuntur temporibus dicta <br> itaque modi dolor commodi voluptatem a illum <br> sapiente maxime!</p>
         <a href="" class="btn">TeleChat</a>
+        
     </div>
-    <div class="img">
-        <img src="images/tshirt-img.png">
-    </div>
+    <div class="jean.jpeg"><img src="{% static 'img/jean.jpeg' %}"></div>
+
+  
 </body>
 </html>
 
 <style>
     .text h1 {
-        font-size: 60px;
+        font-size: 50px;
     }
     .text span { 
         color: rgb(252, 70, 107, 1);
@@ -84,7 +90,7 @@
         font-size: 20px;
 
     }
-    .navbar ulli::after {
+    .navbar ul li::after {
         content: "";
         display: block;
         width: 0px;
@@ -132,7 +138,7 @@
         justify-content: space-between;
         padding: 2% 6%;
     }
-    .navbarul {
+    .navbar ul {
         flex: 1;
         text-align: right;
     }
